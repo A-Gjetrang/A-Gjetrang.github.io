@@ -10,7 +10,7 @@ html, body{
   padding: .8rem;
 }
 .navbar-brand{
-  width: 150px;
+  font-size: 50%;
   font-weight: normal;
 }
 .navbar-nav li{
