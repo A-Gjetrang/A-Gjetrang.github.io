@@ -9,9 +9,11 @@ html, body{
 .navbar{
   padding: .8rem;
 }
-.navbar-brand img{
+.navbar-brand{
   width: 150px;
   height: 70px;
+  font-size: 4em;
+  font: bold;
 }
 .navbar-nav li{
   padding-right: 20px;
