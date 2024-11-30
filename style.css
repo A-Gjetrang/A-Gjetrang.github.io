@@ -12,7 +12,7 @@ html, body{
 .navbar-brand{
   width: 150px;
   height: 70px;
-  font-size: 4em;
+  font-size: 10em;
   font: bold;
 }
 .navbar-nav li{
