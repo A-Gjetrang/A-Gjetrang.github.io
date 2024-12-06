@@ -45,6 +45,14 @@ html, body{
     color: white;
 }
 
+footer {
+    position: relative;
+    z-index: 1; /* Ensure the footer stays above the video */
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+}
 
 .fa-code {
   color: #e54d26;
@@ -62,13 +70,6 @@ html, body{
 .fun{
   width: 100%;
   margin-bottom: 2rem;
-}
-.gif {
-  max-width: 100%;
-}
-.social a {
-  font-size: 4.5em;
-  padding: 3rem;
 }
 .fa-facebook {
   color: #3b5998;
@@ -119,118 +120,6 @@ hr.light-100 {
 }
 
 
-/*---Media Queries --*/
-@media (max-width: 1500px){
-  .carousel-inner img{
-    width: 100%;
-    height: 550px;
-  }
-}
-
-@media (max-width: 992px) {
-  .social a{
-    font-size: 4em;
-    padding: 2rem;
-  }
-  .carousel-inner img{
-    width: 100%;
-    height: 400px;
-  }
-  }
-@media (max-width: 768px) {
-  .carousel-caption {
-    top: 45%;
-  }
-  .carousel-caption h1 {
-    font-size: 350%;
-  }
-  .carousel-caption h3 {
-    font-size: 140%;
-    font-weight: 400;
-    padding-bottom: 0.2rem;
-  }
-  .carousel-caption .btn {
-    font-size: 95%;
-    padding: 8px 14px;
-  }
-  .display-4 {
-    font-size: 200%;
-  } 
-  .display-4 {
-    font-size: 200%;
-  }
-  .social a{
-    font-size: 2.5em;
-    padding: 1.2rem;
-  }
-  .carousel-inner img{
-    width: 100%;
-    height: 100%;
-  }
-}
-@media (max-width: 576px) {
-  carousel-caption {
-    top: 40%;
-  }
-  .carousel-caption h1 {
-    font-size: 250%;
-  }
-  .carousel-caption h3 {
-    font-size: 110%;
-  }
-  .carousel-caption .btn {
-    font-size: 90%;
-    padding: 4px 8px;
-  }
-  .carousel-indicators {
-    display: none;
-  }
-  .display-4 {
-    font-size: 160%;
-  }
-  .social a{
-    font-size: 2em;
-    padding: 1.7rem;
-  }
-  .carousel-inner img{
-    width: 100%;
-    height: 100%;
-  }
-}
 
 
 
-/*---Firefox Bug Fix --*/
-.carousel-item {
-  transition: -webkit-transform 0.5s ease;
-  transition: transform 0.5s ease;
-  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
-  -webkit-backface-visibility: visible;
-  backface-visibility: visible;
-}
-
-/*--- Bootstrap Padding Fix --*/
-[class*="col-"] {
-    padding: 1rem;
-}
-
-
-
-
-
-/*
-Extra small (xs) devices (portrait phones, less than 576px)
-No media query since this is the default in Bootstrap
-
-Small (sm) devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
-
-Medium (md) devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-
-Large (lg) devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-
-Extra (xl) large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
-*/
